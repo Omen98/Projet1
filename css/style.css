@@ -1,0 +1,872 @@
+/*General*/
+
+/*fonts*/
+@font-face {
+  font-family: 'normal';
+  src: url(../fonts/normal.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'thinner';
+  src: url(../fonts/thinner.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'normalBolder';
+  src: url(../fonts/normalBolder.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url(../fonts/bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'titles';
+  src: url(../fonts/titles.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'titlesBolder';
+  src: url(../fonts/titlesBolder.woff2) format('woff2');
+}
+
+/*Fin des Fonts*/
+
+body {
+  font-family: normal;
+  margin: 0;
+}
+
+::selection {
+  background: #3bacf0;
+}
+/* fin de General */
+
+/* debut de header */
+header {
+  height: 1250px;
+  width: 100%;
+}
+
+.BGimageContainer {
+  position: relative;
+  height: 979.5px;
+  overflow: hidden;
+  background-color: #3bacf0;
+}
+
+#BGimage {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: -92px;
+  opacity: 0.1;
+}
+
+.LaptopContainer {
+  position: relative;
+  top: -280px;
+  height: 600px;
+  width: 1000px;
+  left: 469px;
+}
+
+/*NAVBAR*/
+.navBar {
+  font-family: normalBolder;
+  position: sticky;
+  width: 100%;
+  height: 60px;
+  /background-color: rgba(0, 0, 0, 0.8);
+}
+
+#greenButton {
+  position: absolute;
+  background-color: #88d200;
+  height: 34px;
+  width: 113.609px;
+  cursor: pointer;
+  font-size: 11px;
+  left: 1349px;
+  top: 14px;
+  text-align: center;
+}
+
+#greenButton p {
+  margin-top: 8px;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#logoContainer {
+  position: absolute;
+  height: 35px;
+  width: 100px;
+  left: 382px;
+  top: 15px;
+}
+
+#logoImage {
+  cursor: pointer;
+  margin: 1px 0 0 1px;
+}
+
+.navigation {
+  position: absolute;
+  height: 50px;
+  width: 800px;
+  color: white;
+  left: 693px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+  margin: 1px 0 0 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+.navigation li {
+  display: inline;
+  padding: 0 13px 0 13px;
+  font-size: 12px;
+}
+/* Fin de la barre de navigation*/
+
+/* HeaderCenter */
+.titleContainer {
+  position: absolute;
+  height: 300px;
+  width: 40%;
+  left: 30%;
+  top: 357px;
+  text-align: center;
+  color: white;
+}
+
+.titleContainer p {
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+  padding: 13px 0 0 0;
+  margin: 0;
+}
+
+#mainTitle {
+  font-family: titlesBolder;
+  font-size: 48px;
+  color: white;
+}
+
+.MainSubtitles {
+  font-family: titles;
+}
+/* fin de header */
+
+/*blocksDiv*/
+.blocksDiv {
+  position: relative;
+  height: 530px;
+  width: 100%;
+  text-align: center;
+}
+
+.blocksTitle {
+  position: relative;
+  height: 150px;
+  width: 600px;
+  text-align: center;
+  left: 650px;
+  margin-top: 60px;
+}
+
+h1 {
+  color: #222;
+  font-size: 36px;
+  margin: 2px;
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 4px;
+}
+
+.blocks h2 {
+  font-size: 18px;
+}
+
+.blocks:hover{
+  box-shadow: 0px 0px 10px 4px rgba(59,172,240,0.15);
+  color:#3bacf0;
+  transition: 0.1s ease;
+}
+
+.blockBar {
+  position: relative;
+  height: 330px;
+  width: 100%;
+}
+
+.blocks {
+  background-color: #f9f9ff;
+  height: 279px;
+  width: 349.984px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 12px 0 12px;
+}
+
+.blockText {
+  position: absolute;
+  height: 230px;
+  width: 275px;
+  margin: 45px 0 0 40px;
+}
+
+/*StatsDiv*/
+
+.StatsDiv {
+  height: 790.625px;
+  width: 100%;
+  background-color: #f9f9ff;
+  text-align: center;
+}
+
+.Titles {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.StatsBar {
+  position:absolute;
+  height: 450px;
+  width: 100%;
+  margin-top: 250px;
+  background-color: #f9f9ff;
+
+}
+
+.StatsText {
+  height: 300px;
+  width: 570px;
+  margin-top: 60px;
+  margin-left: 390px;
+  text-align: left;
+  float: left;
+}
+
+.StatsText :first-child {
+  color: #3bacf0;
+  font-size: 12px;
+}
+
+#StatsButton {
+  position: absolute;
+  text-align: center;
+  background-color: #3bacf0;
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#StatsButton p {
+  margin-top: 10px;
+  color: white;
+}
+
+#StatsButton:hover {
+  background-color: #f9f9ff;
+  outline: 1px solid black;
+  transition: 0.1s ease;
+}
+
+#StatsButton:hover p {
+  color: black;
+}
+
+.statsContainer {
+  height: 500px;
+  width: 620px;
+  margin: 0 0 20px 10px;
+  float: left;
+}
+
+#Stats {
+  height: 357.625px;
+  width: 540px;
+  float: right;
+  margin: 15px 80px 15px 0;
+}
+
+.StatsShadow {
+  position: absolute;
+  height: 313px;
+  width: 491px;
+  box-shadow: 0px 0px 10px 2px rgba(59,172,240,0.11);
+  color:#3bacf0;
+  border-radius: 10px 10px;
+  margin: 38px 0 0 25px;
+}
+
+.StatsSwitch {
+  height: 20px;
+  width: 100px;
+  margin: 0 0 0 218px;
+}
+
+.grayButtons {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(127,127,127,.5);
+  display: inline-block;
+  margin: 0 3px 0 3px;
+  cursor: pointer;
+}
+
+#blueButton {
+  width: 25px;
+  background-color: #3bacf0;
+}
+
+/*Features*/
+.Features {
+  height: 900px;
+  width: 100%;
+}
+
+.featuresContainer {
+  position: absolute;
+  height: 600px;
+  width: 1300px;
+  margin: 270px 0 0 330px;
+}
+
+.numbContainer {
+  display: inline-block;
+  height: 170px;
+  width: 500px;
+  margin-left: 100px;
+}
+
+.Subtitles {
+  font-family: titles;
+  color: black;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.numbers {
+  font-family: thinner;
+  color: #3bacf0;
+  font-size: 35px;
+  margin: -5px 0 0 -55px;
+  float: left;
+  padding-right: 10px;
+}
+
+/*RequestDiv*/
+
+.RequestDiv {
+  background-color: #3bacf0;
+  height: 397px;
+  width: 100%;
+}
+
+.RequestDiv :first-of-type {
+  color: white;
+}
+
+
+#RequestButton {
+  position: absolute;
+  background-color: #88d200;
+  height: 44px;
+  width: 218.172px;
+  cursor: pointer;
+  margin-top: 241px;
+  margin-left: 844px;
+}
+
+#RequestButton p {
+  font-family: calibri;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 12px;
+  color: white;
+  text-align: center;
+}
+
+#RequestButton:hover {
+  background-color: #3bacf0;
+  outline: 1px solid white;
+  transition: 0.3s ease;
+}
+
+/*Fin de RequestDiv*/
+
+/*Beginner Div*/
+.beginnerDiv {
+  height: 490px;
+  width: 100%;
+}
+
+.beginnerDiv p {
+  margin: 0;
+  text-align: left;
+}
+
+.beginnerText {
+  position: absolute;
+  height: 350px;
+  width: 550px;
+  margin: 100px 0 0 300px;
+}
+
+.beginnerText h1 {
+  margin: 0;
+}
+
+.blue{
+  font-family: bold;
+  color: #3bacf0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.beginnerContainer {
+  background-color: black;
+  height: 490px;
+  width: 952.5px;
+  float: right;
+}
+
+#beginnerImg {
+  height: 490px;
+  width: 952.5px;
+  opacity: 0.7;
+}
+
+#playIcon {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  margin: 100px 0 0px 1085px;
+  cursor: pointer;
+  z-index: 1;
+}
+/*Fin de BeginnerDiv*/
+
+/*Support Division*/
+.supportDiv {
+  height: 700px;
+  width: 100%;
+}
+
+.supportText :first-child {
+  color: #3bacf0;
+}
+
+.supportDiv p {
+  margin: 0;
+  text-align: left;
+}
+
+.supportText {
+  position: absolute;
+  height: 350px;
+  width: 550px;
+  margin: 145px 0 0 1270px;
+}
+
+.supportContainer {
+  height: 600px;
+  width: 1140px;
+  float: left;
+}
+
+#supportImg {
+  height: 600px;
+  width: 1140px;
+}
+/* Fin de Support Division*/
+
+/* Price Division */
+.PriceDiv {
+  height: 850px;
+  width: 100%;
+  text-align: center;
+}
+.PricesMainTitle {
+  margin-bottom: 85px;
+}
+
+.PricesBox {
+  height: 561px;
+  width: 347.984px;
+  border: 1px;
+  border-color: #eee;
+  border-style: solid;
+  display: inline-block;
+  margin: 0 12px 0 12px;
+  cursor: pointer;
+}
+
+.plan {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.PriceTitle {
+  height: 81px;
+  width: 347.984px;
+  background-color: #fbfcff;
+  border: 1px;
+  border-color: #eee;
+  border-style: solid;
+  margin-bottom: 45px;
+}
+
+.PriceTitle h4 {
+  font-family: thinner;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Monthly {
+  position: absolute;
+  height: 206px;
+  width: 257.983px;
+  background-color: #f9f9ff;
+  margin: 30px 45px 0 45px;
+}
+
+.Prix {
+  margin: 30px 40px 0 0;
+}
+
+.Prix p {
+  font-size: 65px;
+  color: black;
+}
+
+.Prix ::first-letter {
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.date {
+  position: absolute;
+  font-weight: 100;
+  float: right;
+  text-align: left;
+  bottom: 115px;
+  left: 150px;
+}
+
+.blueButton {
+  position: relative;
+  height: 42px;
+  width: 160.234px;
+  background-color: #3bacf0;
+  margin: 10px 0 0 50px;
+}
+.blueButton p {
+  position: absolute;
+  font-weight: 700;
+  color: white;
+  top: 7px;
+  left: 35px;
+}
+
+.PricesBox:hover .Monthly {
+  background-color: #3bacf0;
+  transition: 0.3s ease;
+}
+.PricesBox:hover .blueButton {
+  background-color: #88d200;
+  transition: 0.3s ease;
+}
+
+.PricesBox:hover .Monthly p {
+  color: white;
+  transition: 0.3s ease;
+}
+.PricesBox:hover .Prix ::first-letter {
+  color: white;
+  transition: 0.3s ease;
+}
+/* Fin de Price Division*/
+
+/*Debut des Commentaires*/
+.CommentsDiv {
+  height: 600px;
+  width: 100%;
+  background-color: #f9f9ff;
+  text-align: center;
+}
+.CommentsDiv h1 {
+  padding-top: 100px;
+}
+
+.commentContainer {
+  height: 167px;
+  width: 555px;
+  background-color: white;
+  text-align: left;
+  display: inline-block;
+  margin: 60px 15px 0 15px;
+}
+
+.commentContainer h4 {
+  font-family: normalBolder;
+  margin: 0;
+  cursor: pointer;
+}
+
+.commentContainer h4:hover {
+  color: #3bacf0;
+  transition: 0.1s ease;
+}
+
+.person {
+  height: 37.828px;
+  width: 37.828px;
+  float: left;
+  margin: 20px 0 0 20px;
+}
+
+.commentText {
+  height: 120px;
+  width: 450px;
+  float: right;
+  margin: 20px 25px 0 0;
+}
+
+.swapButtons {
+  height: 20px;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.swapB {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(127,127,127,.5);
+  display: inline-block;
+  margin: 0 3px 0 3px;
+  cursor: pointer;
+}
+
+#swap2 {
+  width: 25px;
+  background-color: #3bacf0;
+}
+
+/* Fin des commentaires */
+
+/* Debut des nouvelles */
+
+.NouvellesDiv {
+  height: 905.334px;
+  width: 100%;
+  text-align: center;
+}
+
+.NouvellesDiv h1 {
+  padding-top: 100px;
+}
+
+.NouvellesImages {
+  height: 315px;
+  width: 100%;
+  margin: 70px 0 0 0;
+}
+
+#nouvelle1 {
+  margin-right: 15px;
+}
+
+#nouvelle2 {
+  margin-left: 15px;
+}
+
+.NouvellesDescription {
+  height: 200px;
+  width: 570px;
+  text-align: left;
+  display: inline-block;
+  margin: 20px 0 0 15px;
+}
+
+.travelButton {
+  height: auto;
+  width: 70px;
+  background-color: #3bacf0;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+
+.lifeButton {
+  height: auto;
+  width: 75px;
+  background-color: #3bacf0;
+  text-align: center;
+  float: left;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.travelButton p {
+  font-family: calibri;
+  font-size: 15px;
+  color: white;
+  font-weight: 1;
+}
+
+.lifeButton p {
+  font-family: calibri;
+  font-size: 15px;
+  color: white;
+  font-weight: 1;
+}
+
+.NouvellesText {
+  height: 150px;
+  width: 550px;
+  padding:10px 0 0 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.NouvellesText p {
+  padding-bottom: 10px;
+}
+
+.lifeButton:hover {
+  background-color: white;
+  outline: 1px solid #efefef;
+  transition: 0.1s ease;
+}
+
+.lifeButton:hover p {
+  color: black;
+  transition: 0.1s ease;
+}
+.travelButton:hover {
+  background-color: white;
+  outline: 1px solid #efefef;
+  transition: 0.1s ease;
+}
+
+.travelButton:hover p {
+  color: black;
+  transition: 0.1s ease;
+}
+/* Fin des nouvelles */
+
+/* Debut du footer */
+
+footer {
+  font-family: calibri;
+  height: 406px;
+  width: 100%;
+  background-color: #04091e;
+}
+
+footer ::selection {
+  background: #000000;
+}
+
+footer h4 {
+  color: white;
+  font-size: 21px;
+}
+
+.AboutUs {
+  height: 200px;
+  width: 480px;
+  float: left;
+  margin: 70px 0 0 390px;
+}
+.AboutUs p {
+  margin: 0;
+  font-size: 16px;
+}
+.AboutUs a {
+  text-decoration: none;
+  color: #3bacf0;
+}
+
+#heart {
+  margin: 0 0 -4px 0;
+}
+
+.News {
+  height: 200px;
+  width: 478px;
+  float: left;
+  margin: 70px 0 0 0;
+}
+.News p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#arrow {
+  margin: 10px 0 0 6px;
+}
+
+.Follow {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin: 70px 0 0 0;
+}
+
+.Follow p {
+  margin: 0;
+}
+
+#logos {
+  margin: 15px 0 0 -10px;
+}
+
+input[type=text], select {
+  width: 75%;
+  padding: 11px 18px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#blueBox {
+  position:relative;
+  height: 41px;
+  width: 41px;
+  background-color: #3bacf0;
+  cursor: pointer;
+  bottom: 49px;
+  left: 356px;
+}
+
+
+/* Fin du footer et du CSS */
